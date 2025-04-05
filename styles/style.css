@@ -1,0 +1,37 @@
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.mulish {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.fira-code {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+
+}
+.expertise {
+    position: relative;
+    color: white;
+    padding-bottom: 20px; /* Add space for the line */
+}
+
+.expertise::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 3px;
+    background: rgb(236, 128, 4);
+    transition: width 0.3s ease; /* Added transition for smooth animation */
+}
+
+.expertise:hover::after {
+    width: 160px;
+}
