@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .roboto {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
