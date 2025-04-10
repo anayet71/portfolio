@@ -14,7 +14,8 @@
     font-optical-sizing: auto;
 
 }
-.expertise {
+
+.expertise,.get-title {
     position: relative;
     color: white;
     padding-bottom: 20px; /* Add space for the line */
@@ -28,10 +29,95 @@
     transform: translateX(-50%);
     width: 0px;
     height: 3px;
-    background: rgb(236, 128, 4);
+    background: #BC1D40;
     transition: width 0.3s ease; /* Added transition for smooth animation */
 }
 
 .expertise:hover::after {
     width: 160px;
+}
+
+.navHome::after , .navExpertise::after, .navBlog::after, .navAbout::after  {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 3px;
+    background: #BC1D40;
+    transition: width 0.3s ease; /* Added transition for smooth animation */
+
+}
+.navHome:hover::after{
+    width: 50px;
+}
+.navBlog:hover::after{
+    width: 40px;
+}
+.navExpertise:hover::after{
+    width: 65px;
+}
+.navAbout:hover::after{
+    width: 70px;
+}
+
+.get-title::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 00px;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 3px;
+    background: #BC1D40;
+    transition: width 0.3s ease; /* Added transition for smooth animation */
+}
+.get-title:hover::after{
+    width: 220px;
+}
+
+.expertise_div{
+    font-weight: 300;
+    transition: background .5s, transform .5s;
+    
+}
+.expertise_div:hover{
+    /* background-color: #BC1D40; */
+    /* background-color: #06226e; */
+    background-color: #6b0303fd;
+    transform: translateY(-7px);
+    box-shadow: 0 4px 16px #8f0a00;
+}
+
+/* text */
+
+.container .text{
+    position: relative;
+    color: rgb(101, 179, 0);
+
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: white;
+}
+.text.sec-text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1E0000;
+    border-left: 2px solid rgb(110, 194, 0);
+    animation: animate 3s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+
 }
