@@ -13,6 +13,7 @@ window.addEventListener('scroll', () => {
     if(scrolling > 210){
         btn.style.display = 'block'
         nav.style.backgroundColor = 'black'
+        nav.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)'; // Soft black glow effect
 
     }
     else{
