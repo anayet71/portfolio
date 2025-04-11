@@ -21,7 +21,7 @@
 
     <div>
         <!-- Navbar start -->
-        <div class="navbar text-white shadow-sm  bg-black  fixed z-99">
+        <div class="navbar nav-custom text-white shadow-sm  bg-gray  fixed z-99">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-black ">
                         <li> <a href="#navId">Home</a></li>
-                      
+
                         <li> <a class="" href="#expertiseID">Expertise</a></li>
                         <li> <a href="#aboutMeID">About Me</a></li>
                     </ul>
@@ -44,7 +44,7 @@
             <div class="navbar-center hidden lg:flex ">
                 <ul class="menu menu-horizontal px-1">
                     <li> <a class="navHome" href="#navId">Home</a></li>
-                
+
                     <li> <a class="navExpertise" href="#expertiseID">Expertise</a></li>
                     <li> <a class="navAbout" href="#aboutMeID">About Me</a></li>
 
@@ -57,8 +57,7 @@
         </div>
         <!-- Navbar end -->
         <!-- Banner start -->
-        <section id="navId"
-            class="bg-[#1E0000]  text-white flex  justify-around items-center md:flex-row flex-col
+        <section id="navId" class="bg-[#1E0000]  text-white flex  justify-around items-center md:flex-row flex-col
             custom_banner pt-[100px] border-b border-gray-600 pb-10 ">
             <div class="bg-[#1E0000]  hidden md:block h-[550px] ">
                 <img class="h-full " src="images/Developer.png" alt="">
@@ -70,19 +69,23 @@
                     <span class="text first-text"> I'm a </span>
                     <span class="text sec-text ">Front End Developer</span>
                 </div>
-               <!--  <div class="relative">
-
-                    <p class="w-2/3 font-semibold text-3xl py-5 fira-code "> <span class="text-first">I'm a</span> <span class="text-sec">Web Developer</span></p>
-                </div> -->
-              
             </div>
             <div class="rounded">
-                <img class="w-[350px] md:w-[600px] mt-8 md:mt-0 z-40 relative  rounded-xl border-5 border-[#3c4957]" src="images/photo-output.jpg" alt="anayetImage">
+                <img class="w-[350px] md:w-[600px] mt-8 md:mt-0 z-40 relative  rounded-xl border-5 border-[#3c4957]"
+                    src="images/photo-output.jpg" alt="anayetImage">
             </div>
         </section>
         <!-- Banner end -->
     </div>
 
+        <!-- Btn stat -->
+         <button class=" chevron-btn">
+            <a href="/">
+
+                <img class="text-white" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/chevron-up.png" alt="chevron-up"/>
+            </a>
+         </button>
+        <!-- Btn end -->
 
 
     <!-- About me start -->
@@ -90,12 +93,13 @@
     <section class="text-white bg-[#1E0000] ">
         <div class=" max-w-[1450px] mx-auto py-[150px]  ">
             <h3 class="text-4xl pb-2  text-center expertise " id="expertiseID">Expertise</h3>
-            <p class="text-gray-300 text-center py-6 md:w-2/3 w-11/12 mx-auto">Strong foundation in building structured, semantic,
+            <p class="text-gray-300 text-center py-6 md:w-2/3 w-11/12 mx-auto">Strong foundation in building structured,
+                semantic,
                 and responsive layouts. Skilled in using modern utility-first and component-based CSS frameworks for
                 fast UI development.Experience in creating mobile-friendly and cross-browser compatible websites.
                 Focused on delivering clean, user-centered interfaces with attention to detail.
             </p>
-            <div class="grid lg:grid-cols-4  gap-5  mx-auto md:w-full w-11/12">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5  mx-auto  w-11/12">
                 <div class=" expertise_div border-3 border-[#3c4957]  p-10 rounded-xl shadow-sm">
                     <img src="images/logo-javascript 1.png" alt="">
                     <h4 class="font-bold py-3">Vanilla Javascript</h4>
@@ -134,22 +138,25 @@
         <div>
             <h1 class="text-3xl md:text-4xl py-24 font-semibold text-center get-title">
                 Get <span class="font-bold ">In Touch</span>
-              </h1>
-              
+            </h1>
+
             <div class="md:w-6/12 w-11/12 mx-auto flex justify-center lg:flex-row flex-col gap-16 pt-18">
                 <div class="text-left">
                     <h1 class="text-3xl pb-8 ">Message Me</h1>
                     <div class=>
-                        <input name="Name"  class="focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full border-gray-600  p-3 bg-[#161616] mb-3" 
-                        type="text"
-                            placeholder="Your Name">
-                        <input name="email" class="focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full border-gray-600  p-3 bg-[#161616] mb-3" type="email"
-                            placeholder="Your Email">
-                        <input name="phone" class="focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full border-gray-600  p-3 bg-[#161616] " type="phone"
-                            placeholder="Your Phone">
+                        <input name="Name"
+                            class="focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full border-gray-600  p-3 bg-[#161616] mb-3"
+                            type="text" placeholder="Your Name">
+                        <input name="email"
+                            class="focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full border-gray-600  p-3 bg-[#161616] mb-3"
+                            type="email" placeholder="Your Email">
+                        <input name="phone"
+                            class="focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full border-gray-600  p-3 bg-[#161616] "
+                            type="phone" placeholder="Your Phone">
 
 
-                        <textarea name="message" id="" class=" 
+                        <textarea name="message" id=""
+                            class=" 
                         focus:outline-none focus:border-b-2 focus:border-[#BC1D40]  w-full p-3  rounded p-3 bg-[#161616] border-gray-600 w-full mt-3"
                             rows="10" placeholder="Write Message"></textarea>
                         <button
@@ -165,9 +172,7 @@
                         <p class="pb-5 pt-2 opacity-70">+880 17 4835 5281</p>
                         <p class=" font-bold text-[#BC1D40]">ADDRESS</p>
                         <p class="pb-5 pt-2 opacity-70">Dhaka, <br> Bangladesh</p>
-                        <p class="font-bold text-[#BC1D40]">PHONE</p>
-                        <p class="pb-5 pt-2 opacity-70">+880 17 4835 5281</p>
-                    
+
                     </div>
 
                 </div>
@@ -179,6 +184,7 @@
     <!-- Get In Touch end -->
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

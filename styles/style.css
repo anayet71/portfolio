@@ -92,6 +92,22 @@ html{
     transform: translateY(-7px);
     box-shadow: 0 4px 16px #8f0a00;
 }
+/* button */
+.chevron-btn{
+    /* display: inline; */
+    position: fixed;
+    padding: 20px;
+    background-color: #BC1D40;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    transition: .5s;
+}
 
 /* text */
 
