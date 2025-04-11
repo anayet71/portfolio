@@ -2,6 +2,8 @@ let btn =  document.querySelector('.chevron-btn')
 let nav =  document.querySelector('.nav-custom')
 
 btn.addEventListener('click', ()=>{
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+
     window.scrollTo({top: 0, behavior: 'smooth'} )
 })
 
