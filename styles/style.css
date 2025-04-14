@@ -80,18 +80,69 @@ html{
     width: 220px;
 }
 
-.expertise_div{
+
+
+.expertise_div {
+    position: relative;
     font-weight: 300;
-    transition: background .5s, transform .5s;
-    
+    transition: background 0.5s, transform 0.5s;
+    padding-left: 2rem;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    color: white;
 }
-.expertise_div:hover{
-    /* background-color: #BC1D40; */
-    /* background-color: #06226e; */
+
+/* Top to left border (diagonal effect) */
+.expertise_div::before,
+.expertise_div::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    transition: width 0.5s ease, height 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Top border */
+.expertise_div::before {
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    /* transition-delay: 0s; */
+}
+
+/* Left border */
+.expertise_div::after {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    /* transition-delay: 0.2s; */
+}
+
+/* On hover: reveal top then left border */
+.expertise_div:hover::before {
+    width: 100%;
+}
+
+.expertise_div:hover::after {
+    height: 100%;
+}
+
+.expertise_div:hover {
     background-color: #6b0303fd;
     transform: translateY(-7px);
     box-shadow: 0 4px 16px #8f0a00;
 }
+
+
+
+
+
+
+
 /* button */
 .chevron-btn{
     /* display: inline; */
@@ -107,14 +158,17 @@ html{
     z-index: 10;
     display: none;
     transition: background-color 1s  ease-in-out; 
+
+
 }
 
 /* text */
 
 .container .text{
     position: relative;
-    color: rgb(101, 179, 0);
-
+    background: linear-gradient(45deg, #ff6ec4, #FFB101, #E93A5E);
+    -webkit-background-clip: text;
+    color: transparent;
     font-weight: 600;
 }
 .container .text.first-text{
@@ -128,7 +182,7 @@ html{
     height: 100%;
     width: 100%;
     background-color: #1E0000;
-    border-left: 2px solid rgb(110, 194, 0);
+    border-left: 2px solid #FFB101;
     animation: animate 3s steps(12) infinite;
 }
 @keyframes animate {
